@@ -24,17 +24,24 @@
 }
 
 :root{
-    --primary-color: #FBE5D0;
-    --secondary-color: #DA90AF;
-    --extra-color: #EF6A56;
+    --primary-color: rgba(251,229,208,1);
+    --secondary-color: rgba(218,144,175,1);
+    --extra-color: rgba(239,106,86,1);
     --extra-color2: #ffffff; 
-    --extra-color3: #F6A79B;
+    --extra-color3: rgba(246,167,155,1);
+    --extra-color4: rgba(249, 225, 215, 0.3);
     --acolortext: #E4CDAA;
     --pcolortext: #404040;
     --titlecolortext: #262626;
     --semititlecolortext: #DA6E8C;
+    --landfontsize: 90px;
     --afontsize: 16px;
-    --pfontsize: 17px;
+    --pfontsize-extrasmall: 12px;
+    --pfontsize: 16px;
+    --pfontsize-secondary: 18px;
+    --ptitlefontsize: 32px;
+    --ptitlefontsize-secondary: 36px;
+    --ptitlefontsize-third: 60px;
     --font-family: 'Poppins', sans-serif;
     --font-family2: 'Eksell Display Small', sans-serif;
     --font-family3: 'Eksell Display Stencil', sans-serif;
@@ -55,5 +62,37 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 p{
-    color: var(--titlecolortext);
+    color: var(--pcolortext);
+}
+
+a{
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 992px) {
+    .work-container{
+        flex-direction: column;
+    }
+    .work-container2{
+        flex-direction: column!important;
+    }
+    .testimonial-container{
+        padding: 5% 0 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 576px) {
+    
+}
+
+@media (max-width: 375px) {
+    
 }
