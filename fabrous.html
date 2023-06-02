@@ -7,20 +7,36 @@
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/testimonial.css">
+        <link rel="stylesheet" href="styles/hamburger.css">
         <link rel="stylesheet" href="styles/general.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <title>Fabrous</title>
     </head>
     <body>
         <header>
-            <div class="logo-container">
-                <img src="img/fabrous.png" alt="logo">
-            </div>
-            <div class="pagelink-container">
-                <a href="fabrous.html">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </div>
+            <nav>
+                <div class="nav-container">
+                    <div class="logo-container">
+                        <img src="img/fabrous.png" alt="logo">
+                    </div>
+                    <div class="pagelink-container">
+                        <a href="fabrous.html">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="hamburger-menu" onclick="toggleMenu()">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <div class="link-container slide-up">
+                    <a href="fabrous.html">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+            </nav>
         </header>
         <main>
             <section class="first-section">
@@ -47,17 +63,27 @@
                         </div>
                     </div>
                     <div class="design-image">
-                        <img src="img/heroImg.png" alt="">
+                        <img class="img-first" src="img/heroImg.png" alt="">
+                        <img class="img-second" src="img/image-first.png" alt="">
                     </div>
                 </div>
             </section>
-            <section class="second-section">
+            <section class="second-section second">
                 <div class="container2">
-                    <div class="title-container">
+                    <div class="title-container display-n">
                         <p class="p-secondary">Brand</p>
                         <p class="title">Our Top Brand</p>
                     </div>
-                    <div class="brand-pictures">
+                    <div class="brand-picture">
+                        <img src="img/Adidas.png" alt="">
+                        <img src="img/nike.png" alt="">
+                        <img src="img/vans.png" alt="">
+                        <img src="img/stussy.png" alt="">
+                        <img src="img/shein.png" alt="">
+                        <img src="img/gucci.png" alt="">
+                        <img src="img/guess.png" alt="">
+                    </div>
+                    <div class="brand-pictures display-n">
                         <img src="img/Adidas.png" alt="">
                         <img src="img/nike.png" alt="">
                         <img src="img/vans.png" alt="">
@@ -80,7 +106,7 @@
                         </div>
                         <div class="work-content">
                             <p class="p-style p-secondary">VISIT OUR STORE</p>
-                            <p class="title-secondary">There are loads of Clothes, you can pick for yourself</p>
+                            <p class="title-secondary">There are loads of clothes, you can pick for yourself</p>
                             <div class="work-bullets">
                                 <div class="work-bullet">
                                     <i class="fa-solid fa-play" style="color: #da6e8c;"></i>
@@ -100,50 +126,50 @@
                     </div>
                     <div class="work-container2">
                         <div class="work-image">
-                            <img src="img/heroImg.png" alt="">
+                            <img src="img/heroImg2.png" alt="">
                         </div>
                         <div class="work-content">
-                            <p class="p-style p-secondary">VISIT OUR STORE</p>
-                            <p class="title-secondary">There are loads of Clothes, you can pick for yourself</p>
+                            <p class="p-style p-secondary">CONTACT SELLER</p>
+                            <p class="title-secondary">Create a connection and ensure the quality</p>
                             <div class="work-bullets">
                                 <div class="work-bullet">
                                     <i class="fa-solid fa-play" style="color: #da6e8c;"></i>
-                                    <p class="p-secondary">Pick a product in our Facebook and Shopee</p>
+                                    <p class="p-secondary">Seller send a picture of product before shipping</p>
                                 </div class="work-bullet">
                                 <div class="work-bullet">
                                     <i class="fa-solid fa-play" style="color: #da6e8c;"></i>
-                                    <p class="p-secondary">Clothes only start in 20 pesos</p>
+                                    <p class="p-secondary">Products are highly secure</p>
                                 </div>
                                 <div class="work-bullet">
                                     <i class="fa-solid fa-play" style="color: #da6e8c;"></i>
-                                    <p class="p-secondary">Unlimited offer and many discounts ahead</p>
+                                    <p class="p-secondary">Refund are available for damage product</p>
                                 </div>
                             </div>
-                            <button class="button-style">Visit Store</button>
+                            <button class="button-style">Contact</button>
                         </div>
                     </div>
                     <div class="work-container">
                         <div class="work-image">
-                            <img src="img/heroImg.png" alt="">
+                            <img src="img/heroImg3.png" alt="">
                         </div>
                         <div class="work-content">
-                            <p class="p-style p-secondary">VISIT OUR STORE</p>
-                            <p class="title-secondary">There are loads of Clothes, you can pick for yourself</p>
+                            <p class="p-style p-secondary">SHIPPING & PICK-UP</p>
+                            <p class="title-secondary">There are various ways to get the items you want</p>
                             <div class="work-bullets">
                                 <div class="work-bullet">
                                     <i class="fa-solid fa-play" style="color: #da6e8c;"></i>
-                                    <p class="p-secondary">Pick a product in our Facebook and Shopee</p>
+                                    <p class="p-secondary">Shipping are available for all buyer</p>
                                 </div class="work-bullet">
                                 <div class="work-bullet">
                                     <i class="fa-solid fa-play" style="color: #da6e8c;"></i>
-                                    <p class="p-secondary">Clothes only start in 20 pesos</p>
+                                    <p class="p-secondary">Pick-up in the location agreed upon</p>
                                 </div>
                                 <div class="work-bullet">
                                     <i class="fa-solid fa-play" style="color: #da6e8c;"></i>
-                                    <p class="p-secondary">Unlimited offer and many discounts ahead</p>
+                                    <p class="p-secondary">Pick-up are limited only inside Cabanatuan City</p>
                                 </div>
                             </div>
-                            <button class="button-style">Visit Store</button>
+                            <button class="button-style">About</button>
                         </div>
                     </div>
                 </div>
@@ -161,45 +187,54 @@
             <section class="fourth-section banner-second">
                 <div class="container2">
                     <div class="title-container">
+                        <p class="p-secondary">
+                            <i class="fa-solid fa-star" style="color: #ef6a24;"></i>
+                            <i class="fa-solid fa-star" style="color: #ef6a24;"></i>
+                            <i class="fa-solid fa-star" style="color: #ef6a24;"></i>
+                            <i class="fa-solid fa-star" style="color: #ef6a24;"></i>
+                            <i class="fa-solid fa-star" style="color: #ef6a24;"></i>
+                        </p>
                         <p class="title">Testimonials</p>
                     </div>
                     <div class="testimonial-container">
                         <div class="testimonial">
-                            <p class="p-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat sed lectus vestibulum mattis.</p>
+                            <p class="p-secondary testimonial-p">Exceptional service! The seller goes above and beyond to ensure a seamless transaction. The quality of the items received exceeded my expectations. Highly satisfied!</p>
                             <div class="testimonial-content">
                                 <div class="testimonials-img">
-                                    <img alt="" src="">
+                                    <img alt="" src="img/av3.png">
                                 </div>
                                 <div class="testimonial-name">
-                                    <p class="name">Anonymous</p>
-                                    <p class="p-small">Cabanatuan City</p>
+                                    <p class="name">Jedediah Chris Romano</p>
+                                    <p class="p-small">Rizal</p>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial">
-                            <p class="p-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat sed lectus vestibulum mattis.</p>
+                            <p class="p-secondary testimonial-p">Impressed by the seller's professionalism and attention to detail. The products purchased were a true delight, and the pricing was fair. Will definitely be a repeat customer!</p>
                             <div class="testimonial-content">
                                 <div class="testimonials-img">
-                                    <img alt="" src="">
+                                    <img alt="" src="img/av2.png">
                                 </div>
                                 <div class="testimonial-name">
-                                    <p class="name">Anonymous</p>
-                                    <p class="p-small">Cabanatuan City</p>
+                                    <p class="name">Ivan Mauricio</p>
+                                    <p class="p-small">Bongabon</p>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial">
-                            <p class="p-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat sed lectus vestibulum mattis.</p>
+                            <p class="p-secondary testimonial-p">Thank you, seller! The meet-up or delivery arrangements were always accommodating, and the seller is incredibly kind. The items I purchased are absolutely beautiful and definitely worth the price. Highly recommended!</p>
                             <div class="testimonial-content">
                                 <div class="testimonials-img">
-                                    <img alt="" src="">
+                                    <img alt="" src="img/av1.png">
                                 </div>
                                 <div class="testimonial-name">
-                                    <p class="name">Anonymous</p>
+                                    <p class="name">Aksirk Bautista Arneras</p>
                                     <p class="p-small">Cabanatuan City</p>
                                 </div>
                             </div>
                         </div>
+                        <button class="prev-button">&#10094;</button>
+                        <button class="next-button">&#10095;</button>
                     </div>
                 </div>
             </section>
@@ -221,4 +256,54 @@
             </div>
         </footer>
     </body>
+    <script>
+        var slideIndex = 0;
+showSlide(slideIndex);
+
+var slideInterval = setInterval(nextSlide, 8000); // Change slide every 3 seconds
+
+function showSlide(n) {
+  var slides = document.getElementsByClassName("testimonial");
+
+  if (n >= slides.length) {
+    slideIndex = 0;
+  } else if (n < 0) {
+    slideIndex = slides.length - 1;
+  }
+
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active-slide");
+  }
+
+  slides[slideIndex].classList.add("active-slide");
+}
+
+function prevSlide() {
+  clearInterval(slideInterval); // Stop the automatic slide interval
+  showSlide(slideIndex -= 1);
+}
+
+function nextSlide() {
+  showSlide(slideIndex += 1);
+}
+
+var prevButton = document.querySelector(".prev-button");
+var nextButton = document.querySelector(".next-button");
+
+prevButton.addEventListener("click", prevSlide);
+nextButton.addEventListener("click", nextSlide);
+
+    </script>
+    <script>
+       function toggleMenu() {
+  var menu = document.querySelector('.hamburger-menu');
+  var linkContainer = document.querySelector('.link-container');
+
+  menu.classList.toggle('open');
+  linkContainer.classList.toggle('slide-down');
+  linkContainer.classList.toggle('slide-up');
+}
+
+
+    </script>
 </html>

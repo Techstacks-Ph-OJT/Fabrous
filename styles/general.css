@@ -30,6 +30,8 @@
     --extra-color2: #ffffff; 
     --extra-color3: rgba(246,167,155,1);
     --extra-color4: rgba(249, 225, 215, 0.3);
+    --extra-color5: #DACCD9;
+    --extra-color6: #DAABC3;
     --acolortext: #E4CDAA;
     --pcolortext: #404040;
     --titlecolortext: #262626;
@@ -70,29 +72,237 @@ a{
 }
 
 @media (max-width: 1200px) {
-    
+    .container{
+        position: relative;
+    }
+
+    .fourth-section{
+        padding: 12% 5%;
+    }
 }
 
 @media (max-width: 992px) {
+    :root{
+        --ptitlefontsize-third: 55px;
+    }
+    header{
+        padding: 0;
+    }
+    .logo-container img{
+        width: 25%;
+    }
+    .link-container{
+        display: flex;
+    }
+    .brand-pictures{
+        column-gap: 80px;
+    }
     .work-container{
         flex-direction: column;
+        padding: 8% 6% 4%;
     }
     .work-container2{
-        flex-direction: column!important;
+        flex-direction: column;
+        padding: 8% 6% 4%;
+    }
+    .work-image{
+        flex: 1;
+        width: auto;
     }
     .testimonial-container{
         padding: 5% 0 4%;
+        height: auto;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .testimonial {
+        width: 70%;
+        opacity: 0;
+        display: none;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .testimonial-p{
+        text-align: center;
+        line-height: 25px;
+    }
+
+    .testimonial-content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .testimonial-name{
+        align-items: center;
+    }
+
+    .testimonial.active-slide {
+        display: flex;
+        opacity: 1;
+    }
+
+    .prev-button,
+    .next-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px;
+        font-size: 20px;
+        background: linear-gradient(236deg, var(--primary-color) 0%, var(--extra-color3) 100%);
+        border-radius: 100%;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        display: block;
+    }
+
+    .prev-button {
+        left: -10px;
+    }
+
+    .next-button {
+        right: -10px;
+    }
+
+    .first-section{
+        padding: 0;
+    }
+
+    .container{
+        flex-direction: column-reverse;
+        border-radius: 0;
+    }
+
+    .design-text{
+        align-items: center;
+    }
+
+    .design-contents{
+        padding: 0% 6% 4%;
+    }
+
+    .design-image{
+        padding: 0;
+    }
+
+    .design-image img{
+        height: 80%;
+    }
+
+    .design-button{
+        align-items: center;
+    }
+
+    .img-first{
+        display: none;
+    }
+
+    .img-second{
+        display: block;
     }
 }
 
 @media (max-width: 768px) {
-    
+    :root{
+        --ptitlefontsize-secondary: 28px;
+        --ptitlefontsize-third: 40px;
+    }
+    .logo-container img{
+        width: 32%;
+    }
+    .container{
+        padding: 0 0 20px;
+    }
+
+    .container2{
+        gap: 10px;
+    }
+    .work-container ,.work-container2{
+        align-items: flex-start;
+    }
+    .work-content{
+        align-items: flex-start;
+        gap: 30px;
+    }
+    .brand-pictures{
+        padding: 8% 5% 0;
+        column-gap: 55px;
+    }
 }
 
 @media (max-width: 576px) {
-    
+    :root{
+        --ptitlefontsize-third: 34px;
+        --landfontsize: 60px;
+    }
+    .nav-container{
+        padding: 6% 8%;
+    }
+    .logo-container img{
+        width: 40%;
+    }
+    .display-n{
+        display: none;
+    }
+    .second{
+        /* padding: 12% 0 8%; */
+        padding: 0;
+    }
+    .brand-picture{
+        margin: auto auto;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        padding: 7%;
+        justify-content: center;
+        gap: 80px;
+        align-items: center;
+    }
+
+    .brand-picture img{
+        display: inline-block;
+        animation: myanimation 10s linear infinite;
+        white-space: nowrap;
+        will-change: transform;
+    }
+
+    .brand-picture img{
+        width: 80px;
+    }
+
+    footer{
+        padding: 5%;
+        gap: 8px;
+        flex-direction: column;
+    }
+
+    @keyframes myanimation {
+        from { transform: translateX(500%); }
+		to { transform: translateX(-550%); }
+    }
 }
 
-@media (max-width: 375px) {
-    
+@media (max-width: 479px) {
+    .button-style, .button-style2{
+        width: 100%;
+    }
+    .button-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .work-container, .work-container2{
+        padding: 8% 0% 4%;
+    }
+    .testimonial{
+        width: 100%;
+    }
+    .next-button, .prev-button{
+        display: none;
+    }
 }

@@ -1,9 +1,10 @@
 footer{
     display: flex;
     width: 100%;
-    padding: 2% 5%;
+    padding: 3% 5%;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--extra-color4);
 }
 
 .footer-copyright a{
