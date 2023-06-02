@@ -276,6 +276,10 @@ a{
         width: 80px;
     }
 
+    .row .collection-filter button{
+        font-size: 13px;
+    }
+
     footer{
         padding: 5%;
         gap: 8px;
@@ -296,6 +300,9 @@ a{
         width: 100%;
         flex-direction: column;
     }
+    .row .collection-filter button{
+        font-size: 11px;
+    }
     .work-container, .work-container2{
         padding: 8% 0% 4%;
     }
@@ -306,3 +313,16 @@ a{
         display: none;
     }
 }
+
+@media (max-width: 375px) {
+    .row .collection-filter button{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 337px) {
+    .row .collection-filter button{
+        font-size: 9px;
+    }
+}
+
