@@ -12,13 +12,18 @@
         <link rel="stylesheet" href="styles/general.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <title>Fabrous</title>
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="img/the fab-icon.ico"
+        />
     </head>
     <body>
         <header>
             <nav>
                 <div class="nav-container">
                     <div class="logo-container">
-                        <img src="img/fabrous.png" alt="logo">
+                        <img src="img/the fab-logo.png" alt="logo">
                     </div>
                     <div class="pagelink-container">
                         <a href="fabrous.html">Home</a>
@@ -416,79 +421,75 @@
     </body>
     <script>
         var slideIndex = 0;
-showSlide(slideIndex);
+        showSlide(slideIndex);
 
-var slideInterval = setInterval(nextSlide, 8000); // Change slide every 3 seconds
+        var slideInterval = setInterval(nextSlide, 8000); // Change slide every 3 seconds
 
-function showSlide(n) {
-  var slides = document.getElementsByClassName("testimonial");
+        function showSlide(n) {
+        var slides = document.getElementsByClassName("testimonial");
 
-  if (n >= slides.length) {
-    slideIndex = 0;
-  } else if (n < 0) {
-    slideIndex = slides.length - 1;
-  }
+        if (n >= slides.length) {
+            slideIndex = 0;
+        } else if (n < 0) {
+            slideIndex = slides.length - 1;
+        }
 
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].classList.remove("active-slide");
-  }
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].classList.remove("active-slide");
+        }
 
-  slides[slideIndex].classList.add("active-slide");
-}
+        slides[slideIndex].classList.add("active-slide");
+        }
 
-function prevSlide() {
-  clearInterval(slideInterval); // Stop the automatic slide interval
-  showSlide(slideIndex -= 1);
-}
+        function prevSlide() {
+        clearInterval(slideInterval); // Stop the automatic slide interval
+        showSlide(slideIndex -= 1);
+        }
 
-function nextSlide() {
-  showSlide(slideIndex += 1);
-}
+        function nextSlide() {
+        showSlide(slideIndex += 1);
+        }
 
-var prevButton = document.querySelector(".prev-button");
-var nextButton = document.querySelector(".next-button");
+        var prevButton = document.querySelector(".prev-button");
+        var nextButton = document.querySelector(".next-button");
 
-prevButton.addEventListener("click", prevSlide);
-nextButton.addEventListener("click", nextSlide);
-
+        prevButton.addEventListener("click", prevSlide);
+        nextButton.addEventListener("click", nextSlide);
     </script>
     <script>
        function toggleMenu() {
-  var menu = document.querySelector('.hamburger-menu');
-  var linkContainer = document.querySelector('.link-container');
+        var menu = document.querySelector('.hamburger-menu');
+        var linkContainer = document.querySelector('.link-container');
 
-  menu.classList.toggle('open');
-  linkContainer.classList.toggle('slide-down');
-  linkContainer.classList.toggle('slide-up');
-}
-
-
+        menu.classList.toggle('open');
+        linkContainer.classList.toggle('slide-down');
+        linkContainer.classList.toggle('slide-up');
+        }
     </script>
     <script>
         const filterContainer = document.querySelector(".collection-filter-in");
-const filterBtns = filterContainer.children;
-const totalFilterBtn = filterBtns.length;
-const collectionItems = document.querySelectorAll(".collection-container");
-const totalCollectionItems = collectionItems.length;
+        const filterBtns = filterContainer.children;
+        const totalFilterBtn = filterBtns.length;
+        const collectionItems = document.querySelectorAll(".collection-container");
+        const totalCollectionItems = collectionItems.length;
 
-for (let i = 0; i < totalFilterBtn; i++) {
-  filterBtns[i].addEventListener('click', function() {
-    filterContainer.querySelector(".active").classList.remove("active");
-    this.classList.add("active");
+        for (let i = 0; i < totalFilterBtn; i++) {
+        filterBtns[i].addEventListener('click', function() {
+            filterContainer.querySelector(".active").classList.remove("active");
+            this.classList.add("active");
 
-    const filterValue = this.getAttribute("data-filter");
+            const filterValue = this.getAttribute("data-filter");
 
-    for (let j = 0; j < totalCollectionItems; j++) {
-      if (filterValue === "all" || filterValue === collectionItems[j].getAttribute("data-category")) {
-        collectionItems[j].classList.remove("hide");
-        collectionItems[j].classList.add("show");
-      } else {
-        collectionItems[j].classList.add("hide");
-        collectionItems[j].classList.remove("show");
-      }
-    }
-  });
-}
-
+            for (let j = 0; j < totalCollectionItems; j++) {
+            if (filterValue === "all" || filterValue === collectionItems[j].getAttribute("data-category")) {
+                collectionItems[j].classList.remove("hide");
+                collectionItems[j].classList.add("show");
+            } else {
+                collectionItems[j].classList.add("hide");
+                collectionItems[j].classList.remove("show");
+            }
+            }
+        });
+        }
     </script>
 </html>

@@ -2,24 +2,24 @@
 
 @font-face {
     font-family: 'Eksell Display Stencil';
-    src: url(/font/Eksell-Display-Stencil.ttf) format('truetype');
+    src: url(../font/Eksell-Display-Stencil.ttf) format('truetype');
 }
   
 @font-face {
     font-family: 'Eksell Display Large';
-    src: url(/font/Eksell-Display-Large.ttf) format('truetype');
+    src: url(../font/Eksell-Display-Large.ttf) format('truetype');
     font-weight: normal;
 }
   
 @font-face {
     font-family: 'Eksell Display Medium';
-    src: url(/font/Eksell-Display-Medium.ttf) format('truetype');
+    src: url(../font/Eksell-Display-Medium.ttf) format('truetype');
     font-weight: normal;
 }
   
 @font-face {
     font-family: 'Eksell Display Small';
-    src: url(/font/Eksell-Display-Small.ttf) format('truetype');
+    src: url(../font/Eksell-Display-Small.ttf) format('truetype');
     font-weight: normal;
 }
 
