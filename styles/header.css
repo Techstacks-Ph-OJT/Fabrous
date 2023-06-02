@@ -11,7 +11,7 @@ nav{
 }
 
 .nav-container{
-    padding: 3% 8%; display: flex;
+    padding: 1.9% 8%; display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--extra-color2); 
@@ -23,7 +23,7 @@ nav{
 }
 
 .logo-container img{
-    width: 60%;
+    width: 20%;
 }
 
 .pagelink-container{

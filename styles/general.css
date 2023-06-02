@@ -89,7 +89,7 @@ a{
         padding: 0;
     }
     .logo-container img{
-        width: 25%;
+        width: 13%;
     }
     .link-container{
         display: flex;
@@ -211,7 +211,7 @@ a{
         --ptitlefontsize-third: 40px;
     }
     .logo-container img{
-        width: 32%;
+        width: 10%;
     }
     .container{
         padding: 0 0 20px;
@@ -242,7 +242,7 @@ a{
         padding: 6% 8%;
     }
     .logo-container img{
-        width: 40%;
+        width: 15%;
     }
     .display-n{
         display: none;
