@@ -162,9 +162,6 @@
     padding-bottom: 4rem;
 }
 /* just reusables */
-.padd-15{
-
-}
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -225,10 +222,10 @@
     display: block;
     z-index: -1;
   }
-  .row .collection-filter button:hover::before{
+  /* .row .collection-filter button:hover::before{
     /* width: 7em; */
     
-  }
+  /* } */
   
   .row .collection-filter button {
     transition: .2s ease;
